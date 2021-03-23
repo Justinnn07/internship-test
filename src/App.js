@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Search } from "@material-ui/icons";
+import React from "react";
+import "./App.css";
+import Header from "./components/Header/Header";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className="app__header">
+        <div className="header__flex">
+          <img src="https://www.artfloor.com/images/artfloor.png" alt="" />
+          <div className="app__headerText">
+            <small>
+              International <span className="Art__dealers">Art Dealers</span>
+            </small>
+            <small>
+              & <span className="Art__dealers">Art Consultants</span>
+            </small>
+          </div>
+        </div>
+        <input type="text" placeholder="Search" />
+        <Search />
+      </div>
     </div>
   );
 }

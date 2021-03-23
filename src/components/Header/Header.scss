@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #333333;
+  height: 44px;
+
+  &__icons {
+    margin-left: 950px;
+    display: flex;
+  }
+  &__icons > .MuiSvgIcon-root {
+    color: white !important;
+    cursor: pointer;
+    padding: 10px;
+  }
+  &__icons > .MuiSvgIcon-root:hover {
+    background-color: #ffb300;
+  }
+  &__rightlang {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+  }
+
+  &__rightlang {
+    color: white;
+    font-weight: 400;
+    font-size: 21px;
+  }
+  &__rightlang > span {
+    margin: 10px;
+    cursor: pointer;
+  }
+}
+
+.langActive {
+  color: #ffb300;
+}
