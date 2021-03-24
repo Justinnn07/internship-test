@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+
+.options__lists {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Abel", sans-serif;
+  text-transform: uppercase;
+  font-size: larger;
+  align-items: center;
+}
+
+.options__lists > span {
+  margin: 46px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.options__lists > span:hover {
+  color: #ffb300;
+}
+
+.options {
+  display: grid;
+  place-items: center;
+}

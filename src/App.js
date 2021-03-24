@@ -1,8 +1,17 @@
 import { Search } from "@material-ui/icons";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
+import Carousel from "./components/Body/carousel/Carousel";
+import Options from "./components/Body/Options/Options";
 import Header from "./components/Header/Header";
+import HeaderData from "./Data/HeaderData";
+
 function App() {
+  const [headerData, setHeaderData] = useState([]);
+
+  useEffect(() => {
+    setHeaderData(HeaderData);
+  }, [headerData]);
   return (
     <div className="App">
       <Header />
@@ -10,17 +19,27 @@ function App() {
         <div className="header__flex">
           <img src="https://www.artfloor.com/images/artfloor.png" alt="" />
           <div className="app__headerText">
-            <small>
-              International <span className="Art__dealers">Art Dealers</span>
-            </small>
-            <small>
-              & <span className="Art__dealers">Art Consultants</span>
-            </small>
+            {headerData.map((data) => (
+              <div>
+                <small>
+                  {data.Title}{" "}
+                  <span className="Art__dealers">{data.coloredText}</span>
+                </small>
+                <small>
+                  {data.Title1}
+                  <span className="Art__dealers">{data.coloredText2}</span>
+                </small>
+              </div>
+            ))}
           </div>
         </div>
-        <input type="text" placeholder="Search" />
-        <Search />
+        <div className="header__input">
+          <input type="text" placeholder="Search" />
+          <Search />
+        </div>
       </div>
+      <Options />
+      <Carousel />
     </div>
   );
 }

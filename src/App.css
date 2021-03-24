@@ -5,7 +5,8 @@
   font-family: "Abel", sans-serif;
   flex-direction: column;
   font-style: italic;
-  font-size: 23px;
+  font-size: 20px;
+  margin-top: 4px;
 }
 
 .app__header {
@@ -23,8 +24,28 @@
   color: #ffb300;
 }
 
-.app__header > input {
-  height: 43px;
-  border: 1px solid lightgray;
+.header__input > input {
+  height: 35px;
+  border: none;
+  margin-left: 10px;
   outline-width: 0;
+  margin-top: 4px;
+}
+
+.header__input > input::placeholder {
+  font-family: "Abel", sans-serif;
+  font-size: 20px;
+}
+
+.header__input {
+  display: flex;
+  align-items: center;
+  border: 1px solid lightgray;
+}
+
+.header__input > .MuiSvgIcon-root {
+  color: white !important;
+  background-color: #ffb300;
+  padding: 10px;
+  cursor: pointer;
 }

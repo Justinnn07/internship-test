@@ -1,0 +1,121 @@
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+}
+
+.slider img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin-left: auto;
+  width: 350px;
+  margin: 10px;
+}
+
+.image1 {
+  animation-name: image1;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.image2 {
+  animation-name: image2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.image3 {
+  animation-name: image3;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.image4 {
+  animation-name: image4;
+  animation-duration: 4;
+  animation-iteration-count: infinite;
+}
+
+.image5 {
+  animation-name: image5;
+  animation-duration: 35s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes image1 {
+  0% {
+    opacity: 1;
+  }
+  14% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  94% {
+    opacity: 0;
+  }
+}
+
+@keyframes image2 {
+  14% {
+    opacity: 1;
+  }
+  34% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+
+  99% {
+    opacity: 0;
+  }
+}
+
+@keyframes image3 {
+  34% {
+    opacity: 1;
+  }
+  54% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+
+  99% {
+    opacity: 0;
+  }
+}
+
+@keyframes image4 {
+  54% {
+    opacity: 1;
+  }
+  74% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+
+  99% {
+    opacity: 0;
+  }
+}
+
+@keyframes image5 {
+  74% {
+    opacity: 1;
+  }
+  94% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
