@@ -2,7 +2,8 @@ import { Search } from "@material-ui/icons";
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import Carousels from "./components/Body/carousel/Carousel";
-import Options from "./components/Body/Options/Options";
+import Collage from "./components/Body/Collages/Collage";
+import Options from "./components/Body/MenuOptions/Options";
 import Header from "./components/Header/Header";
 import HeaderData from "./Data/HeaderData";
 
@@ -12,6 +13,7 @@ function App() {
   useEffect(() => {
     setHeaderData(HeaderData);
   }, [headerData]);
+
   return (
     <div className="App">
       <Header />
@@ -39,7 +41,8 @@ function App() {
         </div>
       </div>
       <Options />
-      <Carousels className="carousel1" />
+      <Carousels />
+      <Collage />
     </div>
   );
 }

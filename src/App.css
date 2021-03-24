@@ -2,7 +2,6 @@
 
 .app__headerText {
   display: flex;
-  font-family: "Abel", sans-serif;
   flex-direction: column;
   font-style: italic;
   font-size: 20px;
@@ -33,14 +32,13 @@
 }
 
 .header__input > input::placeholder {
-  font-family: "Abel", sans-serif;
   font-size: 20px;
 }
 
 .header__input {
   display: flex;
   justify-content: space-between;
-  width: 230px;
+  width: 250px;
   align-items: center;
   border: 1px solid lightgray;
 }
@@ -50,8 +48,4 @@
   background-color: #ffb300;
   padding: 10px;
   cursor: pointer;
-}
-
-.carousel1 {
-  text-align: center;
 }
