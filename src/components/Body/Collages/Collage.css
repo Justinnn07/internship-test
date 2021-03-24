@@ -33,3 +33,14 @@
   width: 255px;
   margin-left: 22px;
 }
+
+.collage__last {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 36px;
+}
+
+.collage__last > img {
+  margin-left: 15px;
+}

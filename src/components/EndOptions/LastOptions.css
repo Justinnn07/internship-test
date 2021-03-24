@@ -1,0 +1,49 @@
+.lastOptions__btns {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+}
+
+.lastOptions__btns > span {
+  margin: 25px;
+  margin-bottom: -10px;
+  background-color: #e6e6e6;
+  padding: 5px;
+  width: 20%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.last__newsletter {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  padding: 20px;
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.last__newsletter > span {
+  font-size: larger;
+  font-weight: 300;
+}
+
+.last__newsletter > input {
+  border: none;
+  background-color: lightgray;
+  width: 15%;
+  height: 23px;
+  padding: 7px;
+  margin-left: 10px;
+}
+
+.last__newsletter > button {
+  background-color: #ffb300;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 10px;
+  color: white;
+}
