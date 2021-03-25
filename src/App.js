@@ -1,12 +1,13 @@
-import { Search } from "@material-ui/icons";
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import Carousels from "./components/Body/carousel/Carousel";
 import Collage from "./components/Body/Collages/Collage";
+import Footer from "./components/Body/Footer/Footer";
 import Options from "./components/Body/MenuOptions/Options";
 import LastOptions from "./components/EndOptions/LastOptions";
 import Header from "./components/Header/Header";
 import HeaderData from "./Data/HeaderData";
+import { Search } from "@material-ui/icons";
 
 function App() {
   const [headerData, setHeaderData] = useState([]);
@@ -45,6 +46,7 @@ function App() {
       <Carousels />
       <Collage />
       <LastOptions />
+      <Footer />
     </div>
   );
 }
